@@ -51,7 +51,7 @@ const useSortedMT5Accounts = (regulation?: string) => {
         });
     }, [activeAccount?.is_virtual, all_available_mt5_accounts, isEU, mt5_accounts]);
 
-    // // Reduce out the added and non added accounts to make sure only one of each market_type is shown for not added
+    // Reduce out the added and non added accounts to make sure only one of each market_type is shown for not added
     const filtered_data = useMemo(() => {
         if (!modified_data) return;
 

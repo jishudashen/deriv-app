@@ -288,7 +288,7 @@ describe('verifyFields', () => {
         expect(verifyFields('NameMismatch')).toEqual(['first_name', 'last_name']);
     });
 
-    it('should return first name, last name and dob in the list when the the error is regarding rejection', () => {
+    it('should return first name, last name and dob in the list when the error is regarding rejection', () => {
         expect(verifyFields('Expired')).toEqual(['first_name', 'last_name', 'date_of_birth']);
     });
 });
